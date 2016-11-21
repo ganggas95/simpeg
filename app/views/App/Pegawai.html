@@ -1,0 +1,24 @@
+{{set . "title" "Home"}}
+{{template "header.html" .}}
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-default navbar-costume" style="background-color: #fff;border:none;">
+      	<div class="container-fluid ">
+      		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	          <ul class="nav navbar-nav">
+				  <li><a href="">Tambah Data</a></li>
+				  <form class="navbar-form navbar-left" role="search">
+				  	<div class="form-group">
+				  		<input type="text" class="form-control" name="search" placeholder="Cari Data">
+				  	</div>
+				  	<input type="submit" value="Cari">
+				  </form>
+				</ul>
+	        </div>
+          </div>
+      </nav>
+      
+      {{template "flash.html" .}}
+    </div>
+  </div>
+{{template "footer.html" .}}

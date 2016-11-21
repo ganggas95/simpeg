@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>{{.title}}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/public/css/bootstrap-3.3.6.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="/public/img/favicon.png">
+    <script src="/public/js/jquery-2.2.4.min.js"></script>
+    <script src="/public/js/bootstrap-3.3.6.min.js"></script>
+    {{range .moreStyles}}
+      <link rel="stylesheet" type="text/css" href="/public/{{.}}">
+    {{end}}
+    {{range .moreScripts}}
+      <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
+    {{end}}
+  </head>
+  {{if .user}}
+  <body>
+  <div>
+    <div class="navbar navbar-inverse navbar-fixed-left">
+        <div class="brand" role="button" id="home">SIMPEG</div>
+        <ul class="nav navbar-nav">
+            <div align="center"><img src="/public/img/try.jpg" class="img-circle foto-profile"/></div>
+              <li class="dropdown" id="account">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{.user.Username}} </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Setting</a></li>
+                <li><a href="{{url "App.Logout"}}">Logout</a></li>
+              </ul>
+              </li>
+          <li class="list"><a href="{{url "App.Profile"}}" style="color:#FFF">Profile</a></li>
+          <li class="list"><a href="{{url "App.Pegawai"}}" style="color:#FFF">Data Pegawai</a></li>
+          <li class="list"><a href="{{url "App.Pendidikan"}}" style="color:#FFF">Data Pendidikan</a></li>
+          <li class="list"><a href="{{url "App.Prestasi"}}" style="color:#FFF">Data Prestasi</a></li>
+        </ul>
+    </div>
+
+  {{else}}
+  <body class="bd-login">
+  {{end}}

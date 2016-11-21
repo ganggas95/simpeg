@@ -1,0 +1,153 @@
+
+@charset "utf-8";
+
+.bd-login{
+	background-image: url(../img/bg.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	font-family:"Comic Sans MS", cursive;
+}
+
+.login-main{
+	width: 30%;
+	height: 30%;
+	top: 20%;
+	left: 35%;
+	position: absolute;
+
+}
+.login-header{
+	padding: 10px;
+}
+.login-header img{
+	width: 100%;
+
+}
+.login-content form .form-group label{
+	color: #fff;
+}
+.login-title{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.login-content{
+	padding: 20px;
+	background-color: #03C;
+	border-radius: 10px;
+	-webkit-box-shadow: 3px -2px 13px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px -2px 13px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px -2px 13px 0px rgba(0,0,0,0.75);
+    opacity: 0.4;
+    -webkit-transition: opacity 1.5s;
+    -moz-transition: opacity 1.5s;
+    transition: opacity 1.5s;
+}
+
+.login-content:hover{
+    opacity: 0.9;
+}
+
+.btn-login{
+	background-color:#0C0;
+	color:#FFF;
+	font-style:normal;
+	border:none;
+}
+.btn-login:hover{
+	background-color:#0C6;
+	color:#FFF;
+	font-style:normal;
+}
+
+
+
+/* CSS Document */
+
+.main{
+	top:30%;
+	left:35%;
+	width:30%;
+	height:30%;
+	position:absolute;
+}
+
+.form-main{
+	background-color:#03C;
+    padding:10%;
+    border-radius:5% 5% 5% 5%;
+	
+}
+
+
+.img-profile{
+	width:10%;
+	height:10%;
+}
+.btn-login{
+	background-color:#0C3;
+	color:#FFF;
+	font-style:normal;
+	font-size:large;
+}
+.btn-login:hover{
+	background-color:#0C6;
+	color:#FFF;
+	font-style:normal;
+	font-size:large;
+}
+.navbar-fixed-left {
+  width: 15%;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+  padding:none;
+  background-color:#333;
+  min-width:200px;	
+}
+.brand{
+	background-color:#06F;
+	height:5%;
+	color:#fff;
+	text-align-last:center;
+	padding-top:5px;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: left;  /* Cancel default li float: left */
+  width: 100%;
+  max-width:100%;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 280px;
+}
+#account{
+	text-align:center;
+}
+
+.list{
+  background-color:#06F;
+  height:40px;
+  margin-top:2px;
+  alignment-adjust:central;
+  font-weight:bold;
+}
+
+.list > a{
+	color:#FFF;
+	height:30px;
+}
+
+.bd-app{
+	background-color:#E4E4E4;
+}
+
+.foto-profile{
+	margin-top:10px;
+	margin-bottom:10px;
+	height:120px;
+	width:120px;
+}
