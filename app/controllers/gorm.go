@@ -1,10 +1,10 @@
 package controllers
 
 import (
+	"github.com/ganggas95/simpeg/app/models"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"log"
-	"simpeg/app/models"
 )
 
 type Database struct {

@@ -1,10 +1,10 @@
 package controllers
 
 import (
+	"github.com/ganggas95/simpeg/app/models"
+	"github.com/ganggas95/simpeg/app/routes"
 	"github.com/revel/revel"
 	"golang.org/x/crypto/bcrypt"
-	"simpeg/app/models"
-	"simpeg/app/routes"
 )
 
 type App struct {
